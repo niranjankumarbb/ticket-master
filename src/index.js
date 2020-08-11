@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+ import ReactDOM from 'react-dom'
+import App from './App'
+import {Provider} from 'react-redux'
+import configureStore from './store/configureStore'
+import {startGetCustomer} from './actions/customerAction'
+import {startGetUser} from './actions/userAction'
+import {startGetDepartments} from './actions/departmentsAction'
+import {startGetEmployees} from './actions/employeesAction'
+import {startGetTickets} from './actions/ticketAction'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const store = configureStore()
+ 
+if(localStorage.getItem('authToken1')){
+     store.dispatch(startGetUser())
+}
+  
+store.dispatch(startGetCustomer( ))
+store.dispatch(startGetDepartments( ))
+store.dispatch(startGetEmployees())
+store.dispatch(startGetTickets())
+ 
+store.subscribe(()=>{
+    console.log('store value',store.getState())
+})
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const ele = (
+ <Provider store={store}>
+    <App/>
+</Provider> 
+)
+
+ReactDOM.render(ele, document.getElementById('root'))
