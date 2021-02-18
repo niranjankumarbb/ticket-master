@@ -132,8 +132,7 @@ class DepartmentShow extends React.Component{
     }
 }
 
-const mapStateToProps= (state)=>{
-  
+const mapStateToProps= (state)=>{  
   return {
   customers : state.customers,
   departTickets : state.tickets.filter(ticket=> ticket.department == localStorage.getItem('departId1') ),
@@ -143,6 +142,7 @@ const mapStateToProps= (state)=>{
   department : state.departments.find(depart=> depart._id == localStorage.getItem('departId1'))
     }
 }
+
 export default connect(mapStateToProps)(DepartmentShow)
 
 

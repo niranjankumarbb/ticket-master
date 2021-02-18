@@ -140,8 +140,6 @@ const mapStateToProps = (state)=>{
         customers : state.customers,
       departments : state.departments,
       employees   : state.employees
-
-        }
-    
+        }   
 }
 export default connect(mapStateToProps)(AddTicket)

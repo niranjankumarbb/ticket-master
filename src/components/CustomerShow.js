@@ -97,7 +97,7 @@ class CustomerShow extends React.Component{
                              
                             {
                                  this.state.all && (
-                                     <React.Fragment>
+                                     <>
                                         <h1> Tickets - {this.props.customTickets.length} </h1>
                                         <br/> <br/>
                                         {
@@ -113,7 +113,7 @@ class CustomerShow extends React.Component{
                                      )
                                 })
                             }
-                             </React.Fragment>
+                             </>
                                )
                             }                 
                         </tbody>                        
