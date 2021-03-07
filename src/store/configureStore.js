@@ -1,4 +1,3 @@
-import redux from 'redux'
 import thunk from  'redux-thunk'
 import {createStore, combineReducers, applyMiddleware} from 'redux'
 import userReducer from '../reducers/userReducer' 

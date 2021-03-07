@@ -23,17 +23,12 @@ class CustomerEdit extends React.Component{
     handleSubmit = (e)=>{
         console.log('CustomerEdit handlesubmit entered')
         e.preventDefault()
-        const customId= localStorage.getItem('customId1')
-        const formData ={
-            name     : this.state.name,
-             email   : this.state.email,
-             mobile  : this.state.mobile
-         }
+        const customId= localStorage.getItem('customId1')         
          const redirect = ()=>{
             console.log('redirect function entered')
             return  this.props.history.push('/customers')         
          }
-        this.props.dispatch(startPutCustomer(customId,formData, redirect))
+        this.props.dispatch(startPutCustomer(customId,{...this.state}, redirect))
      }
 
     render(){

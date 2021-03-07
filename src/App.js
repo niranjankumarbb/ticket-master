@@ -68,7 +68,6 @@ function App (props){
                 <Route path='/' component={Home} exact={true}/>
                 <Route path='/login' component={Login} />
                 <Route path='/register' component={Register}  />
-
              </div>
               )}             
             </div>        
