@@ -30,8 +30,7 @@ class AddTicket extends React.Component{
           const employeesData= {
                 _id : employeesId
          }
-         const employeesArray = [].concat(employeesData)
- 
+         const employeesArray = [].concat(employeesData) 
          const formData = {
               code : this.state.code,
          customer  : customerId,
@@ -39,8 +38,7 @@ class AddTicket extends React.Component{
          employees : employeesArray,
          priority  : this.state.priority,
          message   : this.state.message
-         }
- 
+         } 
         const redirect=()=>{
             this.props.history.push('/tickets')
         }
@@ -96,7 +94,7 @@ class AddTicket extends React.Component{
                    return (
                    <option key={i} value={employee.name} >{employee.name}</option>
                    )
-                  })}
+                   })}
                     </select>   
                    <br/> <br/> <br/>
                    </div>
@@ -108,8 +106,7 @@ class AddTicket extends React.Component{
 
                    <h3>Priority</h3>
 
-                   <div className="form-group">
-               
+                   <div className="form-group">               
                   <input type='radio' name='priority'  value='High' onChange={this.handleChange} className="form-control" />
                   <label>High</label>   <br/>
 
@@ -140,6 +137,6 @@ const mapStateToProps = (state)=>{
         customers : state.customers,
       departments : state.departments,
       employees   : state.employees
-        }   
+     }   
 }
 export default connect(mapStateToProps)(AddTicket)

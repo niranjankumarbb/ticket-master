@@ -19,7 +19,7 @@ class AddDepartment extends React.Component{
         e.preventDefault()
         const formData = {
             name : this.state.department
-        }          
+         }          
         this.props.dispatch(startPostDepartment(formData))
     }
 

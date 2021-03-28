@@ -10,7 +10,7 @@ class AddEmployee extends React.Component{
             email: '',
           mobile : undefined,
       department : '',
-     }
+       }
     }
 
     handleChange = (e)=>{
