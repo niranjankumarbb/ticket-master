@@ -68,8 +68,8 @@ class CustomerShow extends React.Component{
                                         </div>
                                      )
                                 })
-                            }
-                                </React.Fragment>
+                               }
+                           </React.Fragment>
                              ): ('')
                           }
                          
@@ -91,7 +91,7 @@ class CustomerShow extends React.Component{
                                      )
                                 })
                             }
-                                 </React.Fragment>
+                                    </React.Fragment>
                                  )
                             }  
                              
