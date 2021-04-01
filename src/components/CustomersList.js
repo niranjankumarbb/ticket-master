@@ -16,7 +16,7 @@ class CustomersList extends React.Component{
 
     handleRemove = (id)=>{
         const confirmed=  window.confirm('Are you sure you want to remove')
-        if(confirmed){
+         if(confirmed){
          this.props.dispatch(startRemoveCustomer(id)) 
         }
      }

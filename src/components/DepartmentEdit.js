@@ -36,13 +36,13 @@ class DepartmentEdit extends React.Component{
              <div>
              <h1> Edit Department</h1>
              <form onSubmit= {this.handleSubmit}>
-                 <div className="form-group">
-                 <input type= "text" value= {this.state.department} onChange= {this.handleChange} className="form-control"/><br/>
-                 </div>
+                <div className="form-group">
+                <input type= "text" value= {this.state.department} onChange= {this.handleChange} className="form-control"/><br/>
+                </div>
 
-                  <div className="form-group"> 
-                  <input type = 'submit' value = 'Add' className="form-control"/>
-                  </div>
+                <div className="form-group"> 
+                <input type = 'submit' value = 'Add' className="form-control"/>
+                </div>
              </form>
              </div>  
              )  :  (
