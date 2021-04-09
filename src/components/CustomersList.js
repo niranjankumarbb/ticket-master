@@ -60,7 +60,7 @@ class CustomersList extends React.Component{
                          })
                     }
                 </tbody>
-            </table>
+              </table>
              <Link  to='/customers/new'> Add Customer</Link>          
             </div>
         )

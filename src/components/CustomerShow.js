@@ -74,7 +74,7 @@ class CustomerShow extends React.Component{
                           }
                          
                           {
-                                 this.state.completed && (
+                                  this.state.completed && (
                                      <React.Fragment>
                                         <h1> Tickets - {this.props.customTicketsCompleted.length} </h1>
                                         <br/> <br/>
