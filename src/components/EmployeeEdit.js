@@ -16,13 +16,11 @@ class EmployeeEdit extends React.Component{
     handleChange = (e)=>{
         this.setState({
             [e.target.name] : e.target.value
-
         })
     }    
 
     handleSubmit = (e)=>{
-        console.log('EmployeeEdit handlesubmit entered')
-        e.preventDefault()
+         e.preventDefault()
         const deptId = this.props.departments.find(dep=>dep.name== this.state.department)._id
         const empId= localStorage.getItem('empId1')
         const formData ={
@@ -45,9 +43,9 @@ class EmployeeEdit extends React.Component{
                 {this.props.departments? (
                  <div>
                 <h1> Add Employee</h1>
-               <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit}>
 
-               <div className="form-group">
+                <div className="form-group">
                 <label>Name</label>
                 <br/>
                 <input type='text' name='name' value={this.state.name} onChange= {this.handleChange} className="form-control"/>
@@ -101,7 +99,7 @@ const mapStateToProps = (state,props)=>{
     return {
     employee : state.employees.find(employee=>employee._id == localStorage.getItem('empId1')),
     departments : state.departments 
-
     }
 }
+
 export default connect(mapStateToProps)(EmployeeEdit)
