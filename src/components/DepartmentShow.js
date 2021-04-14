@@ -37,7 +37,7 @@ class DepartmentShow extends React.Component{
     }    
 
     render(){
-        console.log('departmentShow page props',this.props)        
+      console.log('departmentShow page props',this.props)        
         return (
             <div>
                 { (this.props.customers.length>=0 && this.props.departTickets && this.props.departTicketsPending && this.props.departTicketsCompleted && this.props.employees.length>=0 && this.props.department) ? (

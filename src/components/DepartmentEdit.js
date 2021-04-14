@@ -28,7 +28,7 @@ class DepartmentEdit extends React.Component{
         this.props.dispatch(startPutDepartment(id,formData, redirect))
     }
 
- render(){
+   render(){
      return (
          <div>
              {
