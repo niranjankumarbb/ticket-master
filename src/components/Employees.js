@@ -26,7 +26,7 @@ class Employees extends React.Component{
         return(
               <div>
                   { this.props.employees ? (
-                      <div>
+                  <div>
                   <h1> Employees -{this.props.employees.length} </h1>
                   <table border='1'>
                       <thead>
@@ -67,7 +67,7 @@ class Employees extends React.Component{
                   <Link  to = '/employees/new'> Add Employee</Link>
                   </div>
                   ) : (
-                      <h1> Loading</h1>
+                      <h1> Loading...</h1>
                   )
                 }
               </div>
