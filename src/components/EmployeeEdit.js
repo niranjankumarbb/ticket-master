@@ -85,7 +85,6 @@ class EmployeeEdit extends React.Component{
                 </div>            
                 </form>
                </div>
-
                 ) : (
                     <h1> Loading... </h1>
                 )
