@@ -24,7 +24,7 @@ class Employees extends React.Component{
 
     render(){
         return(
-              <div>
+              <React.Fragment>
                   { this.props.employees ? (
                   <div>
                   <h1> Employees -{this.props.employees.length} </h1>
@@ -70,7 +70,7 @@ class Employees extends React.Component{
                       <h1> Loading...</h1>
                   )
                 }
-              </div>
+              </React.Fragment>
           )
     }
 }
