@@ -37,7 +37,7 @@ class EmployeeShow extends React.Component{
     }
 
     render(){
-        console.log(this.state)
+       console.log(this.state)
         return(
             <div>
                 { (this.props.customers.length>0 && this.props.empTickets.length>=0 && this.props.empTicketsPending.length>=0 && this.props.empTicketsCompleted.length>=0&& this.props.employee && this.props.departments.length>0) ? (
@@ -54,8 +54,8 @@ class EmployeeShow extends React.Component{
                         <tbody>
                              { this.state.pending?(
                                  <React.Fragment>
-                                     <h1> Tickets - {this.props.empTicketsPending.length} </h1>
-                                      <br/> <br/>
+                                   <h1> Tickets - {this.props.empTicketsPending.length} </h1>
+                                   <br/> <br/>
                                    { this.props.empTicketsPending.map(empTicket=>{
                                     return(
                                        <React.Fragment>
@@ -67,8 +67,7 @@ class EmployeeShow extends React.Component{
                                         <hr/>
                                         <br/> <br/> <br/>
                                         </React.Fragment>
-                                        )
-                                                      
+                                        )                                                      
                                      })
                                    }
                                 </React.Fragment>
@@ -123,7 +122,7 @@ class EmployeeShow extends React.Component{
                </table>
              </div>
              ) : (
-                 <h1> Loading...</h1>
+             <h1> Loading...</h1>
              )
              }
              </div>            
