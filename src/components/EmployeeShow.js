@@ -116,8 +116,8 @@ class EmployeeShow extends React.Component{
                                           })
                                         }
                                      </React.Fragment>
-                                 )
-                             }    
+                                   )
+                               }    
                   </tbody>                        
                </table>
              </div>
