@@ -1,9 +1,9 @@
 import React from 'react'
 
 function Home (props){
-    return (
+     return (
         <h1> Welcome to the ticket master app</h1>
-     )
+      )
 }
 
 export default Home
