@@ -20,8 +20,8 @@ class Login extends React.Component{
     handleSubmit = (e)=>{
         e.preventDefault()
         const formData = {
-            email    : this.state.email,
-            password : this.state.password 
+          email    : this.state.email,
+          password : this.state.password 
         } 
        this.props.dispatch(startLoginUser(formData))       
     } 
