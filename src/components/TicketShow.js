@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 function TicketShow(props){
     return (
          <div>
-             {  (props.ticket && props.customers.length>0 && props.employees.length>0 && props.departments.length>0)? (
+             { (props.ticket && props.customers.length>0 && props.employees.length>0 && props.departments.length>0)? (
                  <div>
                     <h1> Code Number - {props.ticket.code}</h1>
                     <table border='1'>
@@ -35,4 +35,5 @@ const mapStateToProps= (state,props)=>{
     departments : state.departments
     }
 }
+
 export default connect(mapStateToProps)(TicketShow)
