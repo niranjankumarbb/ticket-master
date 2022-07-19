@@ -1,11 +1,9 @@
 const employeesInitialValue = []
 const employeesReducer = (state=employeesInitialValue, action)=>{
-    switch(action.type) {
-
+    switch(action.type) { 
         case 'SET_EMPLOYEES' : {
             return  [...action.payload]
-        }
-
+        } 
         default : {
             return [].concat(state)
         }
