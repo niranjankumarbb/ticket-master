@@ -26,7 +26,6 @@ function App (props){
  
   const  handleClick = ()=>{
         props.dispatch(startLogout())
-
   }
      return(
         <BrowserRouter>
@@ -69,10 +68,10 @@ function App (props){
                 <Route path='/login' component={Login} />
                 <Route path='/register' component={Register}  />
              </div>
-              )}             
+            )}             
             </div>        
         </BrowserRouter>
-    )
+     )
 }
 
 const mapStateToProps= (state)=>{
@@ -81,4 +80,5 @@ const mapStateToProps= (state)=>{
         user        : state.user
     }
 }
+
 export default connect(mapStateToProps)(App)
