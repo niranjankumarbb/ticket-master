@@ -29,14 +29,14 @@ class AddCustomer extends React.Component{
             mobile  : this.state.mobile
         }
          const redirect = ()=>{
-            console.log('redirect function entered')
+            // console.log('redirect function entered')
             return  this.props.history.push('/customers')
         }
         this.props.dispatch(startPostCustomer(formData, redirect))
      }
 
     render(){
-        console.log('Addcustomer page props ',this.props)
+        // console.log('Addcustomer page props ',this.props)
          return(
             <div className="row">
               <div className="col-md-8 offset-md-2">
