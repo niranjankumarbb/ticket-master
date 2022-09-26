@@ -21,7 +21,7 @@ class AddCustomer extends React.Component{
     }
 
     handleSubmit = (e)=>{
-        console.log('AddCustomer handlesubmit entered')
+        // console.log('AddCustomer handlesubmit entered')
         e.preventDefault()        
         const formData ={
             name    : this.state.name,
