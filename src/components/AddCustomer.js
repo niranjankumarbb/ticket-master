@@ -21,23 +21,20 @@ class AddCustomer extends React.Component{
     }
 
     handleSubmit = (e)=>{
-        // console.log('AddCustomer handlesubmit entered')
-        e.preventDefault()        
+         e.preventDefault()        
         const formData ={
             name    : this.state.name,
             email   : this.state.email,
             mobile  : this.state.mobile
         }
          const redirect = ()=>{
-            // console.log('redirect function entered')
-            return  this.props.history.push('/customers')
+             return  this.props.history.push('/customers')
         }
         this.props.dispatch(startPostCustomer(formData, redirect))
      }
 
     render(){
-        // console.log('Addcustomer page props ',this.props)
-         return(
+          return(
             <div className="row">
               <div className="col-md-8 offset-md-2">
                 <h1> Add Customer </h1> 
