@@ -8,8 +8,7 @@ export const startPostTicket = (formData, redirect)=>{
             }
         })
         .then(response=>{
-            console.log('startPostTicket response', response.data)
-            if( response.data.hasOwnProperty('errors')){
+             if( response.data.hasOwnProperty('errors')){
                 alert(response.data.message)
             } else {
                 dispatch(startGetTickets())
@@ -30,8 +29,7 @@ export const startGetTickets = ()=>{
             }
         })
         .then(response=>{
-            console.group('startGetTickets response data', response.data)
-             if(response.data.hasOwnProperty('errors')){
+              if(response.data.hasOwnProperty('errors')){
                  alert(response.data.message)
              }else {
                  dispatch(setTokens(response.data))
@@ -51,8 +49,7 @@ export const startRemoveTicket= (id)=>{
         }
     })
     .then(response=>{
-        console.log('startRemoveTicket response', response.data)
-        if(response.data.hasOwnProperty('errors')){
+         if(response.data.hasOwnProperty('errors')){
             alert(response.data.message)
         }else {
             alert('Successfully removed')
@@ -71,8 +68,7 @@ export const startPutTicket = (id,data)=>{
         }
     })
     .then(response=>{
-        console.log('startPutTicket response', response.data)
-        if(response.data.hasOwnProperty('errors')){
+         if(response.data.hasOwnProperty('errors')){
             alert(response.data.message)
         }else {
             dispatch(startGetTickets())
