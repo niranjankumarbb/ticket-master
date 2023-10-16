@@ -30,7 +30,7 @@ export const startGetUser = ()=>{
               }
         })
         .catch(err=>{
-            console.log('startGetUser  error', err)
+            // console.log('startGetUser  error', err)
         })
     }
 }
